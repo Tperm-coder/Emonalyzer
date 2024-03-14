@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Emonalyzer</title>
+		<script src="https://unpkg.com/wavesurfer.js"></script>
+	</head>
+	<body>
+		<div class="music-player-container" id="musiPlayer">
+			<div class="music-player">
+				<div class="info">
+					<h1 id="audioTitle"></h1>
+					<div id="waveform"></div>
+					<div class="control-bar">
+						<img src="./assests/play.png" alt="play" id="playBtn" title="Play / Pause" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="inputs-container">
+			<div class="input-box" id="audioUpload">
+				<img
+					src="./assests/upload.png"
+					alt="play"
+					id="playBtn"
+					title="Upload"
+					style="width: 40%; height: 40%"
+				/>
+			</div>
+			<div class="input-box" id="voiceInput" data-info="off">
+				<img
+					src="./assests/record.png"
+					alt="play"
+					id="playBtn"
+					title="Upload"
+					style="width: 40%; height: 40%"
+				/>
+			</div>
+		</div>
+
+		<input type="file" id="audioUploadInput" accept="audio/mpeg" />
+		<script type="module" src="./main.js"></script>
+		<script type="module" src="./statics.js"></script>
+	</body>
+</html>
